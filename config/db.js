@@ -10,16 +10,16 @@ let dbname;
 
 switch (process.env.NODE_ENV) {
   case "test":
-    dbname = "test_db";
+    dbname = "nearbuy";
     break;
   case "development":
-    dbname = "development_db";
+    dbname = "nearbuy";
     break;
   case "production":
-    dbname = "production_db";
+    dbname = "nearbuy";
     break;
   default:
-    dbname = "development_db";
+    dbname = "nearbuy";
 }
 
 const dbAddress = process.env.DB_HOST || "127.0.0.1";
